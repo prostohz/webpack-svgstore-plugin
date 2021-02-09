@@ -1,0 +1,92 @@
+{
+  "_args": [
+    [
+      "github:matpaul/webpack-svgstore-plugin#master",
+      "/Users/svyatoslav.podmogaev/workspaces/iqoption/qc/react"
+    ]
+  ],
+  "_from": "github:matpaul/webpack-svgstore-plugin#master",
+  "_id": "webpack-svgstore-plugin@github:matpaul/webpack-svgstore-plugin#4208ce233cd1b350b906bd6d8fded89b0b64d259",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/webpack-svgstore-plugin",
+  "_phantomChildren": {
+    "argparse": "1.0.10",
+    "array-union": "1.0.2",
+    "clap": "1.2.3",
+    "coa": "1.0.4",
+    "esprima": "2.7.3",
+    "glob": "7.1.6",
+    "inherits": "2.0.4",
+    "mkdirp": "0.5.5",
+    "object-assign": "4.1.1",
+    "pinkie-promise": "2.0.1",
+    "readable-stream": "2.3.7",
+    "sax": "1.2.4",
+    "source-map": "0.5.7",
+    "whet.extend": "0.9.9"
+  },
+  "_requested": {
+    "type": "git",
+    "raw": "github:matpaul/webpack-svgstore-plugin#master",
+    "rawSpec": "github:matpaul/webpack-svgstore-plugin#master",
+    "saveSpec": "github:matpaul/webpack-svgstore-plugin#master",
+    "fetchSpec": null,
+    "gitCommittish": "master"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "github:matpaul/webpack-svgstore-plugin#4208ce233cd1b350b906bd6d8fded89b0b64d259",
+  "_spec": "github:matpaul/webpack-svgstore-plugin#master",
+  "_where": "/Users/svyatoslav.podmogaev/workspaces/iqoption/qc/react",
+  "author": {
+    "name": "me@mrsum.ru"
+  },
+  "bugs": {
+    "url": "https://github.com/mrsum/webpack-svgstore-plugin/issues"
+  },
+  "contributors": [
+    {
+      "name": "Mike Chernobrov",
+      "email": "me@mrsum.ru"
+    },
+    {
+      "name": "Gordey Levchenko",
+      "email": "levchenko.gordey@gmail.com"
+    }
+  ],
+  "dependencies": {
+    "async": "2.1.4",
+    "globby": "6.1.0",
+    "htmlparser2": "3.9.2",
+    "lodash": "4.17.2",
+    "pug": "2.0.0-beta6",
+    "svgo": "0.7.1"
+  },
+  "description": "Webpack svgstore plugin",
+  "devDependencies": {
+    "chai": "3.5.0",
+    "codeclimate-test-reporter": "0.4.0",
+    "eslint-config-rambler": "0.2.5",
+    "istanbul": "0.4.5",
+    "mocha": "3.2.0",
+    "path": "0.12.7",
+    "webpack": "2.2.1"
+  },
+  "homepage": "https://github.com/mrsum/webpack-svgstore-plugin#readme",
+  "license": "MIT",
+  "main": "src/svgstore.js",
+  "name": "webpack-svgstore-plugin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrsum/webpack-svgstore-plugin.git"
+  },
+  "scripts": {
+    "build": "rm -rf platform/dist/* && NODE_ENV=platform webpack --progress --colors --bail",
+    "code:coverage": "NODE_ENV=platform ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha ./src/__tests__/index.js && npm run code:report",
+    "code:report": "CODECLIMATE_REPO_TOKEN=29b2c943849c33562af12b70563d86e95c073e04c7510e9da5d9711cf3233b17 ./node_modules/.bin/codeclimate-test-reporter < coverage/lcov.info",
+    "test": "NODE_ENV=platform ./node_modules/.bin/_mocha ./src/__tests__/index.js"
+  },
+  "version": "4.0.3"
+}
